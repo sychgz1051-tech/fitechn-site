@@ -1,0 +1,48 @@
+/* Product presentation follows the original site's wide page rhythm. */
+.ft-catalog{color:var(--ink)}
+.ft-catalog .ft-section{width:100%;max-width:none;margin:0;padding:clamp(72px,6vw,112px) var(--page-pad)}
+.ft-catalog-intro{padding-bottom:50px!important}
+.ft-catalog-intro h1{max-width:1100px;font-size:clamp(2.55rem,4.4vw,5.2rem);line-height:1.06;margin:0;font-weight:700}
+.ft-intro-bottom{display:flex;align-items:end;justify-content:space-between;gap:48px;margin-top:28px}
+.ft-intro-bottom p{color:var(--muted);font-size:1.1rem;margin:0;max-width:740px}
+.ft-jump-links{display:flex;gap:25px;flex-wrap:wrap}
+.ft-jump-links a{white-space:nowrap;color:var(--green-dark);font-size:14px;text-underline-offset:6px;font-weight:650}
+.ft-creatine{--tone:#15657a;--tint:#f0f6f8}
+.ft-oregano{--tone:#365b3f;--tint:#f4f6ee}
+.ft-catalog-feature{width:100%;max-width:none;margin:0;padding:clamp(48px,5vw,90px) var(--page-pad);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,5vw,90px);align-items:center;scroll-margin-top:90px;background:#fff}
+.ft-catalog-feature.ft-oregano{background:#f5f8f3}
+.ft-catalog-visual{position:relative;min-width:0;display:grid;place-items:center;background:var(--tint);padding:30px 30px 58px;border-radius:8px;min-height:520px}
+.ft-catalog-visual>img{display:block;width:100%;height:clamp(350px,32vw,560px);object-fit:contain;mix-blend-mode:multiply}
+.ft-format-label{position:absolute;bottom:22px;left:20px;right:20px;color:var(--tone);font-size:12px;text-align:center;text-transform:uppercase;letter-spacing:.5px}
+.ft-catalog-copy{max-width:760px}
+.ft-catalog-copy h2{font-size:clamp(2.25rem,3.35vw,4rem);line-height:1.08;margin:0 0 24px}
+.ft-catalog-copy p{font-size:1.05rem;color:var(--muted)}
+.ft-catalog-copy .eyebrow{color:var(--tone);font-size:.78rem}
+.ft-catalog-copy .ft-product-lead{font-weight:650;color:var(--ink);font-size:1.2rem}
+.ft-key-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;border-block:1px solid var(--line);margin:28px 0;padding:23px 0}
+.ft-key-facts dt{font-size:12px;color:var(--muted);margin-bottom:8px}
+.ft-key-facts dd{font-size:clamp(20px,1.9vw,29px);color:var(--tone);margin:0;font-weight:750}
+.ft-actions{display:flex;gap:12px;flex-wrap:wrap}
+
+.ft-evidence-link{display:flex;align-items:center;gap:18px;margin-top:28px;padding-top:24px;border-top:1px solid var(--line);text-decoration:none}
+.ft-evidence-link img{width:82px;height:90px;object-fit:cover;border-radius:5px}
+.ft-evidence-link small{display:block;color:var(--muted);font-size:10px;letter-spacing:1px;margin-bottom:5px}
+.ft-evidence-link b{font-size:12px;color:var(--tone)}
+.ft-oregano .ft-catalog-visual{order:2}
+.ft-oregano .ft-catalog-copy{order:1}
+.ft-care{width:100%;max-width:none;padding:55px var(--page-pad);display:flex;align-items:center;justify-content:space-between;gap:40px;background:#f0f5f5;margin:0 0 55px}
+.ft-care h2{font-size:clamp(1.8rem,2.5vw,3rem);line-height:1.12;margin:0}
+.ft-care p{color:var(--muted)}
+.ft-care .button{flex:none}
+@media(min-width:1800px){.ft-catalog .ft-section,.ft-catalog-feature,.ft-care{padding-inline:max(var(--page-pad),calc((100% - 1600px)/2))}}
+@media(max-width:1050px){.ft-intro-bottom{display:block}.ft-jump-links{margin-top:24px}.ft-catalog-feature{gap:32px}.ft-catalog-copy h2{font-size:2.5rem}.ft-catalog-visual{min-height:430px;padding-inline:20px}.ft-catalog-visual>img{height:350px}.ft-key-facts{gap:10px}.ft-key-facts dd{font-size:20px}}
+@media(max-width:700px){
+.ft-catalog .ft-section{padding:48px var(--page-pad)}.ft-catalog-intro h1{font-size:2.55rem}.ft-intro-bottom p{font-size:1rem}
+.ft-jump-links{gap:20px}.ft-jump-links a{font-size:12px}
+.ft-catalog-feature{grid-template-columns:1fr;padding:36px var(--page-pad);gap:30px}
+.ft-catalog-visual{min-height:350px;padding:20px 22px 48px}.ft-catalog-visual>img{height:285px}.ft-format-label{font-size:9px;bottom:18px}
+.ft-oregano .ft-catalog-visual,.ft-oregano .ft-catalog-copy{order:initial}
+.ft-catalog-copy h2{font-size:2.2rem}.ft-catalog-copy p{font-size:15px}.ft-catalog-copy .ft-product-lead{font-size:17px}
+.ft-key-facts dt{font-size:10px}.ft-key-facts dd{font-size:19px}.ft-actions{display:grid;grid-template-columns:1fr}
+.ft-care{display:block;padding:36px var(--page-pad)}.ft-care h2{font-size:1.9rem}.ft-care .button{margin-top:14px}.ft-care p{font-size:14px}
+}
